@@ -10,7 +10,7 @@ spring:
       discovery:
         enabled: true
         # 应用名称，本示例固定值（可替换成自己想要的名字），因为只有应用名称相同的微服务才能够相互发现，不能轻易变化。
-        appName: canary-application
+        appName: canary-application2
         serviceName: ${spring.application.name}
         # 注册中心地址，本示例使用ServiceStage环境变量。建议保留这种配置方式，部署的时候，不用手工修改地址。
         address: ${PAAS_CSE_SC_ENDPOINT:http://127.0.0.1:30100}
